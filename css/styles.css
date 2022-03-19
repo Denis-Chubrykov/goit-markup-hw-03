@@ -138,7 +138,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantage-text:last-child {
+.advantage-list .advantage-text:last-child {
   margin-right: 0;
 }
 .advantage-text {
