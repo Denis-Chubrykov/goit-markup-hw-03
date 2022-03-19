@@ -14,6 +14,28 @@ body {
   font-weight: 700;
   color: var(--brand-color);
 }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* шапка */
+
+.header-nav-list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 .header {
   background-color: var(--background-color);
 }
@@ -34,6 +56,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+}
+.header-mail {
+  margin-right: 50px;
 }
 .header-mail,
 .header-tel {
@@ -71,6 +96,10 @@ body {
   background-color: var(--bgsecondary-color);
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 200px;
+
   color: var(--background-color);
   font-weight: 900;
   font-size: 44px;
@@ -79,6 +108,9 @@ body {
   text-transform: uppercase;
 }
 .hero-button {
+  padding: 10px 32px;
+  margin-bottom: 200px;
+
   background-color: var(--accent-color);
   color: var(--background-color);
   font-weight: inherit;
@@ -94,18 +126,30 @@ body {
 .advantage {
   background-color: var(--background-color);
 }
+.advantage-list {
+  display: flex;
+}
 .advantage-subtitle {
+  padding-bottom: 10px;
+  padding-top: 94px;
+
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.advantage-text:last-child {
+  margin-right: 0;
+}
 .advantage-text {
+  margin-right: 30px;
+
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 /* чем занимаемся */
 .working {
   background-color: var(--background-color);
