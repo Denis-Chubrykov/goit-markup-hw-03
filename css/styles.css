@@ -32,9 +32,12 @@ ul {
 /* шапка */
 
 .header-nav-list {
-  display: inline-block;
+  display: flex;
   margin: 0;
   padding: 0;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .header {
   background-color: var(--background-color);
@@ -51,11 +54,18 @@ ul {
   color: var(--accent-color);
 }
 .header-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+}
+.header-list {
+  display: flex;
 }
 .header-mail {
   margin-right: 50px;
@@ -128,6 +138,8 @@ ul {
 }
 .advantage-list {
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .advantage-subtitle {
   padding-bottom: 10px;
@@ -138,13 +150,12 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantage-list .advantage-text:last-child {
-  margin-right: 0;
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
 }
 .advantage-text {
-  margin-right: 30px;
-
   color: var(--text-color);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
