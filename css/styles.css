@@ -30,6 +30,9 @@ ul {
   margin-right: auto;
 }
 /* шапка */
+.headerbox {
+  display: flex;
+}
 
 .header-nav-list {
   display: flex;
@@ -67,11 +70,15 @@ ul {
 .header-list {
   display: flex;
 }
-.header-mail {
+.header-item:not(:last-child) {
   margin-right: 50px;
 }
 .header-mail,
 .header-tel {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
