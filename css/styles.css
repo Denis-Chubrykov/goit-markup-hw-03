@@ -9,6 +9,7 @@
   --bgportfolio-color: #eeeeee;
   --mailtel-color: rgba(255, 255, 255, 0.6);
 }
+/* Утилиты */
 body {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -30,10 +31,13 @@ ul {
   margin-right: auto;
 }
 /* шапка */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .headerbox {
   display: flex;
+  align-items: center;
 }
-
 .header-nav-list {
   display: flex;
   margin: 0;
@@ -44,6 +48,11 @@ ul {
 }
 .header {
   background-color: var(--background-color);
+}
+.header-nav-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-nav-logo,
 .footer-link {
@@ -69,6 +78,7 @@ ul {
 }
 .header-list {
   display: flex;
+  margin-left: auto;
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
@@ -146,7 +156,6 @@ ul {
 .advantage-list {
   display: flex;
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 .advantage-subtitle {
   padding-bottom: 10px;
@@ -172,7 +181,14 @@ ul {
 .working {
   background-color: var(--background-color);
 }
+
+.working-list {
+  display: flex;
+  justify-content: space-between;
+}
 .working-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -182,19 +198,39 @@ ul {
 .team {
   background-color: var(--bgbutton-color);
 }
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .team-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
 .team-text {
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -204,6 +240,15 @@ ul {
   background-color: var(--background-color);
 }
 /* Подвал страницы */
+
+.footer-link {
+  display: block;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-list {
   font-family: Roboto;
   font-style: normal;
