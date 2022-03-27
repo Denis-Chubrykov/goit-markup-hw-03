@@ -28,7 +28,7 @@ ul {
   padding: 0;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -177,6 +177,7 @@ ul {
 }
 .advantage-text {
   color: var(--text-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -191,7 +192,10 @@ ul {
 
 .working-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.working-item:not(:last-child) {
+  margin-right: 30px;
 }
 .working-title {
   margin-bottom: 50px;
@@ -207,7 +211,9 @@ ul {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -286,6 +292,9 @@ ul {
 .portfolio {
   background-color: var(--background-color);
 }
+
+/* кнопки */
+
 .portfolio-button {
   display: flex;
   justify-content: center;
@@ -316,13 +325,28 @@ ul {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
+
+/* Основная секция */
+.mainblock {
+  display: flex;
+  flex-wrap: wrap;
+}
 .portfolio-title {
+  padding-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--brand-color);
 }
 .portfolio-text {
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -332,4 +356,23 @@ ul {
 .Current-button {
   background-color: var(--accent-color);
   color: var(--background-color);
+}
+.portfolio-list {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-list:nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio-list:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.border {
+  border-left: 1px solid var(--bgportfolio-color);
+  border-right: 1px solid var(--bgportfolio-color);
+  border-bottom: 1px solid var(--bgportfolio-color);
+}
+.imeges {
+  display: block;
 }
