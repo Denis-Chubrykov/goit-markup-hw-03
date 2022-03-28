@@ -133,7 +133,6 @@ ul {
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   color: var(--background-color);
   font-weight: 900;
@@ -142,9 +141,11 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.hero-button:hover {
+  background-color: #188ce8;
+}
 .hero-button {
   padding: 10px 32px;
-  margin-bottom: 200px;
 
   background-color: var(--accent-color);
   color: var(--background-color);
@@ -165,12 +166,16 @@ ul {
   display: flex;
 }
 .advantage-subtitle {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.advantage-item {
+  width: 270px;
+  height: 75px;
 }
 .advantage-item:not(:last-child) {
   margin-right: 30px;
@@ -229,7 +234,6 @@ ul {
   letter-spacing: 0.03em;
 }
 .team-subtitle {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   text-align: center;
@@ -239,8 +243,6 @@ ul {
   letter-spacing: 0.03em;
 }
 .team-text {
-  margin-bottom: 30px;
-
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -248,16 +250,16 @@ ul {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.foto-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-item {
   background-color: var(--background-color);
 }
 /* Подвал страницы */
-.address {
-  padding-bottom: 60px;
-}
 .footer-link {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .footer-item:not(:last-child) {
@@ -332,10 +334,7 @@ ul {
   flex-wrap: wrap;
 }
 .portfolio-title {
-  padding-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
 
   font-size: 18px;
   line-height: 2;
@@ -343,10 +342,6 @@ ul {
   color: var(--brand-color);
 }
 .portfolio-text {
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -372,7 +367,10 @@ ul {
   border-left: 1px solid var(--bgportfolio-color);
   border-right: 1px solid var(--bgportfolio-color);
   border-bottom: 1px solid var(--bgportfolio-color);
+  padding: 20px 24px;
 }
 .imeges {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
